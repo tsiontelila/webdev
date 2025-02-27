@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+    font-family: 'verdana', sans-serif;
+    line-height: 1.6;
+    background: url('webb.jpg') no-repeat center center fixed;
+    background-size: cover; 
+    color: white; 
+
+
+        
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: #9e7b7b;
+    text-align: center;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #84fab0;
+}
+
+/* Section */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #c18383;
+}
+
+.section p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Projects */
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.project {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 1 1 calc(30% - 20px);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.project h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #84fab0;
+}
+
+.project a {
+    color: #333;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project a:hover {
+    color: #8fd3f4;
+}
+
+/* Skills */
+.skills-list {
+    display: inline-block;
+    text-align: left;
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #5dabcd;
+}
+
+/* Footer */
+footer {
+    background: #482a2a;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsion's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>TSION TELILA</h1>
+<p>  </p>
+ 
+
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I am Tsion, a passionate Computer Science student with a strong interest in web development. I have experience working with HTML and CSS to create clean and responsive designs. As a fast learner, I am eager to expand my knowledge, take on new challenges, and continuously improve my skills in the ever-changing tech landscape.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <h3>Project 1</h3>
+                    <p>A <a href="https://github.com/tsiontelila/CssLap" target="_blank">View Project</a></p>
+                </div>
+                <div class="project">
+                    <h3>Project 2</h3>
+                    <p> <a href="https://github.com/tsiontelila/webdev/commit/31a12ed9f60d6a0d9d23dd3a1f438232356542e6" target="_blank">View Project</a></p>
+                </div>
+                <div class="project">
+                    <h3>Project 3</h3>
+                    <p> <a href="https://github.com/tsiontelila/webdev/commit/31a12ed9f60d6a0d9d23dd3a1f438232356542e6" target="_blank">View Project</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML & CSS</li>
+                <li>Java</li>
+                <li>C++</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:telilatsion@gmail.com">telilatsion@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/Tsion Telila" target="_blank" rel="noopener noreferrer">tsion</a></p>
+            <p>GitHub: <a href="https://github.com/tsiontelila" target="_blank" rel="noopener noreferrer">tsiontelila</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+        </div>
+    </footer>
+</body>
+</html>
